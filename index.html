@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax</title>
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+    .container{
+      margin-top: 40px;
+    }
+
+    .form-control{
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    
+    <h2>Covid-19 Updates</h2>
+<div class="box-a column">
+
+  <form action="" id="form">
+    <div class="form-control">
+      <select id="select">
+        <option value="">Select</option>
+
+      </select>
+    </div>
+    <div   class="form-control">
+      <select id="cases">
+        <option value="">Select</option>
+        <option value="confirmed">Confirmed</option>
+        <option value="recovered">Recovered</option>
+          <option value="deaths">Deaths</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+         <input type="submit" value="Search" class="button-primary">
+      </div>
+
+    </form>
+  </div>  
+  <div class="box-a column">
+    <ul><li>Comfirmed: 150</li></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
