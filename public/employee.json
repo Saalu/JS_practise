@@ -1,0 +1,20 @@
+[
+   { "id":1,
+    "name": "Adam",
+    "company": "Korle-bu",
+    "job": "Doctor"
+    },
+
+   { "id":2,
+    "name": "Saalu",
+    "company": "TechGarage",
+    "job": "Web Developer"
+    },
+    
+   { "id":3,
+    "name": "Baba",
+    "company": "TechGarage",
+    "job": "Mechanic"
+    }
+
+]
