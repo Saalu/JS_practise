@@ -18,6 +18,7 @@ body{
 #form{
 }
 
+
 label{
     margin-bottom: 5px;
     width: 100%;
@@ -35,7 +36,11 @@ display: block;
     background: #eee;
 }
 
-.btn{
+input.error{
+    border:1px solid red;
+}
+
+.btn, #send{
     margin-top: 30px;
     padding: .6rem 1rem;
     border-radius: 10px;
@@ -43,7 +48,6 @@ display: block;
     outline: none;
     border: none;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
-    cursor: pointer;
 }
 .btn:active{
 
@@ -52,8 +56,16 @@ display: block;
 
 #send{
     background:red;
+    cursor: pointer;
+
+}
+#send.disabled{
+    background: #c0c0c0;
+    
 }
 #reset{
     background: blue;
+    cursor: pointer;
+
     float: right;
 }
