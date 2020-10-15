@@ -36,10 +36,10 @@ function validateField(){
 function validateLength(field){
 
     if(field.value.length > 0){
-        field.style.borderBottomColor = 'green';
+        field.style.borderColor = 'green';
         field.classList.remove('error')
     }else{
-        field.style.borderBottomColor= 'red';
+        field.style.borderColor= 'red';
         field.classList.add('error')
     }
 
