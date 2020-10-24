@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -25,6 +27,10 @@ nav .cart-icon{
     /* z-index: 100; */
 }
 
+/* bg img text */
+.bg-img h3{
+    font-size: 2rem;
+}
 .active{
     /* display: none; */
     width: 200px;
@@ -33,7 +39,7 @@ nav .cart-icon{
     float: right;
     margin-right: 20px;
     /* margin-top: 20px; */
-    transform:translateY(100%) ;
+    /* transform:translateY(100%) ; */
 }
 
 .container{
@@ -57,12 +63,12 @@ main h2{
 box-shadow:var(--shadow);
 margin: 0 20px 50px;
 }
-.item .next{
+.item .card-info{
     padding: 20px;
 
 }
-.item .next p{
-    margin-top: 5px;
+.item .card-info p{
+    margin: 10px 0;
 
 }
 .item img{
@@ -70,20 +76,22 @@ margin: 0 20px 50px;
     height: 120px;
 }
 .item .price{
-    margin-top: 10px;
+    margin: 10px 0;
 
     display: flex;
     justify-content: space-between;
 }
-.item .price p.discount{
+.item .price .discount{
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.item button{
-    margin-top: 10px;
-    width: 100%;
+.item div a{
+    text-align: center;
+    margin-top: 30px;
+    width: 100px;
     background: rgb(38, 172, 235);
-    padding: .5rem 0;
+    padding: .5rem 1rem;
     border-radius: 6px;
     border: none;
     color:#fff;
