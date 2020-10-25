@@ -31,15 +31,44 @@ nav .cart-icon{
 .bg-img h3{
     font-size: 2rem;
 }
-.active{
-    /* display: none; */
-    width: 200px;
-    background: gray;
-    height: 160px;
-    float: right;
+.cart-drop{
+    display: none;
+    width: 300px;
+    background: rgba(128, 128, 128, 0.753);
+    min-height: 160px;
     margin-right: 20px;
-    /* margin-top: 20px; */
-    /* transform:translateY(100%) ; */
+    padding: .5rem;
+    position: fixed;
+    top:60px;
+    right: 0;
+    z-index: 100;
+}
+
+.active{
+    display: block;
+
+}
+
+.remove{
+    color:red;
+    font-size: bold;
+}
+
+.btn{
+    background: #03A9F4 ;
+    color: #fff;
+    font-size: large;
+    padding: .5rem 0;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    /*left: 20px;
+    bottom: 10px; */
+    width: 80%;
+    margin-top: 20px;
+}
+.btn:hover{
+    box-shadow: var(--shadow);
 }
 
 .container{
