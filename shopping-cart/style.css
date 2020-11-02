@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -25,15 +27,48 @@ nav .cart-icon{
     /* z-index: 100; */
 }
 
-.active{
-    /* display: none; */
-    width: 200px;
-    background: gray;
-    height: 160px;
-    float: right;
+/* bg img text */
+.bg-img h3{
+    font-size: 2rem;
+}
+.cart-drop{
+    display: none;
+    width: 300px;
+    background: rgba(128, 128, 128, 0.753);
+    min-height: 160px;
     margin-right: 20px;
-    /* margin-top: 20px; */
-    transform:translateY(100%) ;
+    padding: .5rem;
+    position: fixed;
+    top:60px;
+    right: 0;
+    z-index: 100;
+}
+
+.active{
+    display: block;
+
+}
+
+.remove{
+    color:red;
+    font-size: bold;
+}
+
+.btn{
+    background: #03A9F4 ;
+    color: #fff;
+    font-size: large;
+    padding: .5rem 0;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    /*left: 20px;
+    bottom: 10px; */
+    width: 80%;
+    margin-top: 20px;
+}
+.btn:hover{
+    box-shadow: var(--shadow);
 }
 
 .container{
@@ -57,12 +92,12 @@ main h2{
 box-shadow:var(--shadow);
 margin: 0 20px 50px;
 }
-.item .next{
+.item .card-info{
     padding: 20px;
 
 }
-.item .next p{
-    margin-top: 5px;
+.item .card-info p{
+    margin: 10px 0;
 
 }
 .item img{
@@ -70,20 +105,22 @@ margin: 0 20px 50px;
     height: 120px;
 }
 .item .price{
-    margin-top: 10px;
+    margin: 10px 0;
 
     display: flex;
     justify-content: space-between;
 }
-.item .price p.discount{
+.item .price .discount{
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.item button{
-    margin-top: 10px;
-    width: 100%;
+.item div a{
+    text-align: center;
+    margin-top: 30px;
+    width: 100px;
     background: rgb(38, 172, 235);
-    padding: .5rem 0;
+    padding: .5rem 1rem;
     border-radius: 6px;
     border: none;
     color:#fff;
