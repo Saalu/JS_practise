@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object-fit</title>
+
+    <style>
+        h1{
+            color: #e4e4e4;
+        font-size:5rem
+        }
+        .card{
+            background: lightgreen;
+            width: 350px;
+            padding: 3rem;
+        }
+        .card__image{
+            width: 100%;
+            height: 150px;
+            /* object-fit: cover; */
+            /* object-fit: contain; */
+            /* object-fit: fill; */
+            object-fit: scale-down;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Object-fit</h1>
+    <div class="card">
+        <img src="four.jpg" class="card__image" alt="">
+    </div>
+</body>
+</html>
